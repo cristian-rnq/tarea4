@@ -15,6 +15,11 @@ public class Image extends Archive{
     @Override
     public void open() {
 
+        System.out.println("Contenido del archivo de imagen");
+        System.out.println("Paht: " + getPath());
+        System.out.println("Tamaño: " + getSize());
+        System.out.println("Altura:" + height);
+        System.out.println("Acchura: " + width);
     }
 
     public int getHeight() {

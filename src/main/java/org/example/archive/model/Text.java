@@ -12,8 +12,10 @@ public class Text extends Archive{
 
     @Override
     public void open() {
-        System.out.println("Contenido del archivo");
-
+        System.out.println("Contenido del archivo de texto");
+        System.out.println("Paht: " + getPath());
+        System.out.println("Tamaño: " + getSize());
+        System.out.println("Contenido:" + content);
     }
 
     public String getContent() {

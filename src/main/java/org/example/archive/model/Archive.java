@@ -11,6 +11,16 @@ public abstract class Archive {
         this.path = path;
     }
 
+    public void move(String newPaht){
+        if (this.path.equals(newPaht)){
+            System.out.println("no hay cambios");
+        }else {
+            this.path = newPaht;
+            System.out.println("Se ha movido el fichero" + newPaht);
+        }
+    }
+
+
     public abstract void open();
 
     public int getSize() {
